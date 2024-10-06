@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: 'Oswald';
+    text-align: center;
+    overflow: hidden;
+    margin: 0;
+
+
+}
+
+h2 {
+    margin-bottom: 0;
+    text-align: center;
+}
+
+small {
+
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: red;
+    color: white;
+    margin: 20px;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0px 10px 20px #5c5151;
+}
+
+#times {
+    font-size: 20px;
+}
+
+.loveMe {
+
+    height: 440px;
+    width: 300px;
+    background-image: url(d.jpg);
+    background-size: calc(110%);
+    margin: auto;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0px 10px 20px #49adf0;
+    position: relative;
+}
+
+.loveMe .fa-heart {
+    position: absolute;
+    animation: grow 0.6s linear;
+    transform: translate(-50%, -50%) scale(0);
+}
+
+@keyframes grow {
+    to {
+        transform: translate(-50%, -50%) scale(10);
+        opacity: 0;
+
+    }
+}
